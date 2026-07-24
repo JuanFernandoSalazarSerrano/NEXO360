@@ -1,5 +1,45 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        width: 240px;
+        font-family: Arial, sans-serif;
+        background: #101828;
+        color: #f8fafc;
+      }
+
+      .wrap {
+        padding: 16px;
+      }
+
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 12px;
+        padding: 12px 14px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #101828;
+        background: linear-gradient(135deg, #fbbf24, #fb7185);
+      }
+
+      .status {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #cbd5e1;
+        min-height: 18px;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello Extensions Colsubsudio</h1>
+    <div class="wrap">
+      <button id="draw-lines">Draw important lines</button>
+      <div id="status" class="status">Select a tab and click to draw lines.</div>
+    </div>
+    <script src="popup.js"></script>
   </body>
 </html>
